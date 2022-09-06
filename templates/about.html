@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}
+О церкви
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <center><h1>Пасторы церкви</h1></center>
+   <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://imageshack.com/i/pnIEn0mbp" class="card-img-top" alt="Алексей Прокопенко">
+      <div class="card-body">
+        <h5 class="card-title">Алексей Прокопенко</h5>
+        <p class="card-text">Старший пресвитер церкви «Любовь Христова». Родился в неверующей семье, обратился ко Христу в 14-летнем возрасте. С 2007 г. исполняет обязанности помощника пастора, в 2012 г. рукоположен на пасторское служение. Вместе с женой Екатериной воспитывает дочь Кристину и сына Марка. Окончил Самарский государственный медицинский университет (педиатрический факультет и аспирантура). Получил степень магистра богословия (ThM) в семинарии «Мастерс» (The Master’s Seminary) в Лос-Анджелесе.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://imageshack.com/i/pnSqGcZhp" class="card-img-top" alt="Олег Шейда">
+      <div class="card-body">
+        <h5 class="card-title">Олег Шейда</h5>
+        <p class="card-text">Пресвитер церкви «Любовь Христова»</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://imageshack.com/i/poFzniYyp" class="card-img-top" alt="Александр Гуртаев">
+      <div class="card-body">
+        <h5 class="card-title">Александр Гуртаев</h5>
+        <p class="card-text">Пресвитер церкви «Любовь Христова». Родился в неверующей семье в 1982 году. В начале 90-х годов начал посещать самарскую церковь вместе с родителями. Искренне обратился к Господу и принял водное крещение в 2000 году. Занимался служением в детской воскресной школе. Вел молодежные группы по изучению Библии. В период с 2003 по 2016 годы занимался молодежным служением церкви «Преображение». В 2008 году был рукоположен на дьяконское служение, в 2012 году – на пресвитерское служение. Вместе с женой Ириной воспитывает пятерых детей.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+<div class="container">
+<h1>О церкви</h1>
+    <h4>Остались вопросы? Тогда спросите нас об этом в форме ниже.</h4>
+<form action="/about" method="post">
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Адрес электронной почты</label>
+  <input type="email" class="form-control" name = "email" id="exampleFormControlInput1" placeholder="name@example.com" value="" required>
+</div>
+  <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Пример текстового поля</label>
+  <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+    <p><input class="btn btn-primary" type="submit" value="Отправить">
+</form>
+</div>
+{% endblock %}
