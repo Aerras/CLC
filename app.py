@@ -1,8 +1,9 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request, session
 from sendMail import send_email
+import Config
 
 app = Flask(__name__)
-
+app.config['SECRET_KEY'] = Config.SK
 
 @app.route('/')
 def index():
